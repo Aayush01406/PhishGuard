@@ -5,7 +5,6 @@ import {
   Shield,
   AlertTriangle,
   CheckCircle,
-  XCircle,
   ArrowRight,
   Lock,
   Globe,
