@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { History as HistoryIcon, Search, CheckCircle, AlertTriangle, XCircle } from 'lucide-react';
+import { History as HistoryIcon, CheckCircle, AlertTriangle, XCircle } from 'lucide-react';
 import Sidebar from '../components/Sidebar';
 import api from '../lib/api';
 

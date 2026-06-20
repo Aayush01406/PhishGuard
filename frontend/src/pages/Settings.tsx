@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Settings as SettingsIcon, Bell, Lock, Palette } from 'lucide-react';
+import { Bell, Lock, Palette } from 'lucide-react';
 import Sidebar from '../components/Sidebar';
 
 const Settings: React.FC = () => {
@@ -68,17 +68,21 @@ const Settings: React.FC = () => {
                         className="flex items-center justify-between py-3 border-b border-slate-50 last:border-0"
                       >
                         <span className="text-slate-700">{item.label}</span>
-                        {item.value && <span className="text-slate-500">{item.value}</span>}
-                        {item.toggle && (
-                          <div className="w-12 h-6 bg-primary rounded-full relative cursor-pointer">
-                            <div className="absolute right-1 top-1 w-4 h-4 bg-white rounded-full"></div>
-                          </div>
-                        )}
-                        {item.action && (
-                          <button className="text-primary font-medium hover:text-green-600">
-                            Coming Soon
-                          </button>
-                        )}
+                        {'value' in item && (
+  <span className="text-slate-500">{item.value}</span>
+)}
+
+{'toggle' in item && item.toggle && (
+  <div className="w-12 h-6 bg-primary rounded-full relative cursor-pointer">
+    <div className="absolute right-1 top-1 w-4 h-4 bg-white rounded-full"></div>
+  </div>
+)}
+
+{'action' in item && item.action && (
+  <button className="text-primary font-medium hover:text-green-600">
+    Coming Soon
+  </button>
+)}
                       </div>
                     ))}
                   </div>

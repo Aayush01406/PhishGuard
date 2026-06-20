@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { BarChart3, PieChart, TrendingUp, Loader2 } from 'lucide-react';
+import { PieChart, TrendingUp, Loader2 } from 'lucide-react';
 import {
   LineChart,
   Line,

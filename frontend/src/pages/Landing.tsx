@@ -5,8 +5,6 @@ import {
   Zap,
   Lock,
   ArrowRight,
-  CheckCircle,
-  AlertTriangle,
   Globe,
   Search,
   BarChart3

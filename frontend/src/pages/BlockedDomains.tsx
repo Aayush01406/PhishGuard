@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Ban, Trash2, Shield } from 'lucide-react';
+import { Trash2, Shield } from 'lucide-react';
 import Sidebar from '../components/Sidebar';
 import api from '../lib/api';
 
