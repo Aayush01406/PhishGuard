@@ -72,11 +72,11 @@ const Scanner: React.FC = () => {
     return { bg: 'bg-red-100', text: 'text-red-600', border: 'border-red-200', stroke: '#ef4444' };
   };
 
-  const getRiskIcon = (score: number) => {
-    if (score <= 20) return CheckCircle;
-    if (score <= 50) return AlertTriangle;
-    return XCircle;
-  };
+  // const getRiskIcon = (score: number) => {
+  //   if (score <= 20) return CheckCircle;
+  //   if (score <= 50) return AlertTriangle;
+  //   return XCircle;
+  // };
 
   const calculateStrokeDashoffset = (score: number) => {
     const circumference = 2 * Math.PI * 45;

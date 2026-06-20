@@ -37,12 +37,6 @@ const History: React.FC = () => {
     return AlertTriangle;
   };
 
-  const getStatusColor = (prediction: string) => {
-    if (prediction === 'Safe') return 'text-green-600 bg-green-50';
-    if (prediction === 'Phishing') return 'text-red-600 bg-red-50';
-    return 'text-yellow-600 bg-yellow-50';
-  };
-
   return (
     <div className="flex min-h-screen bg-background">
       <Sidebar />

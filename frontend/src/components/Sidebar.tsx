@@ -36,7 +36,7 @@ const Sidebar: React.FC = () => {
       </div>
 
       <nav className="flex-1 p-4 space-y-2">
-        {navItems.map((item, idx) => (
+        {navItems.map((item) => (
           <NavLink
             key={item.path}
             to={item.path}
